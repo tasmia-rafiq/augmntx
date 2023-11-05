@@ -1,0 +1,23 @@
+.profile_sidebar h3 {
+    color: #343f52;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.profile_sidebar ul:nth-child(2) {
+    margin-top: 20px;
+}
+
+.profile_sidebar li {
+    padding-bottom: 10px;
+}
+
+.profile_sidebar li a {
+    color: #60697b;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.profile_sidebar span {
+    color: #aab0bc;
+}

@@ -1,0 +1,82 @@
+footer {
+    background-color: #000;
+    color: lightgray;
+    padding: 3.5rem 0;
+}
+
+.footer_row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1rem 0 3rem;
+}
+
+.footer_logo {
+    width: 50%;
+}
+
+.footer_logo img {
+    width: 70%;
+}
+
+.footer_col {
+    width: 17%;
+}
+
+.footer_col h3 {
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.footer_col a {
+    display: inline-block;
+    font-size: 1rem;
+    color: lightgray;
+    font-weight: 500;
+    padding-top: 15px;
+}
+
+.footer_row:nth-child(2) {
+    border-top: 3px solid gray;
+    padding-top: 2rem;
+}
+
+.footer_row:nth-child(2) ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer_row:nth-child(2) ul a {
+    color: lightgray;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.copyright a {
+    color: var(--primary-color);
+}
+
+/* ========== REPONSIVE DESIGN ========== */
+@media (max-width: 991px) {
+    .footer_row {
+        flex-direction: column;
+        gap: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .footer_col, .footer_logo {
+        width: 100%;
+    }
+}
+
+@media (max-width: 540px) {
+    .footer_row:nth-child(2) {
+        align-items: center;
+    }
+}

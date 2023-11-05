@@ -1,0 +1,19 @@
+.search_skill {
+    padding: 0 1rem;
+}
+
+.search_skill input {
+    width: 100%;
+    background: #fff;
+    border: 1px solid rgba(0,0,0,0.06);
+    border-radius: var(--border-md-rounded);
+    padding: 15px 10px;
+    font-size: 0.95rem;
+    outline: none;
+    transition: var(--transition);
+}
+
+.search_skill input:focus {
+    border-color: #66afe9;
+    box-shadow: 0 0 10px 0 #66aee99c;
+}

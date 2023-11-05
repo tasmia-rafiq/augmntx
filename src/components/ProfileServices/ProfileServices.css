@@ -1,0 +1,138 @@
+.profile_services .row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1.3rem 4rem;
+  border-bottom: 1px solid #cacaca;
+}
+
+.profile_services .row .service_title {
+  width: 32%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #343f52;
+}
+
+.profile_services .row .service_desc {
+  /* flex: 0 0 auto; */
+  width: 68%;
+  color: #60697b;
+  font-weight: 500;
+}
+
+.profile_services .inner_row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0.25rem 0;
+}
+
+.inner_row.flex_col {
+  flex-direction: column;
+}
+
+.profile_services .inner_col {
+  width: 100%;
+  padding: 0 0 7px;
+}
+
+.profile_services:nth-child(6) .inner_col:not(:first-child) {
+  color: #aab0bc;
+}
+
+.service_desc p:not(.inner_col p) {
+  text-transform: capitalize;
+}
+
+/* ===== PROJECT DESIGN ===== */
+.project_title {
+  color: #343f52;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.project_title span {
+  position: relative;
+  left: 20px;
+}
+
+.project_title::before {
+  content: "";
+  position: relative;
+  top: 16px;
+  right: 2px;
+  height: 8px;
+  width: 8px;
+  background-color: #000;
+  font-size: 28px;
+  border-radius: 50%;
+  display: block;
+}
+
+.project_title .project_url {
+  color: var(--primary-color);
+  padding-left: 0.5rem;
+  font-weight: 500;
+  font-size: 0.87rem;
+}
+
+.project_duration {
+  padding: 5px 20px 15px;
+  color: #aab0bc;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.project_details {
+  border-left: 1px dashed #000;
+  padding-left: 20px;
+  word-wrap: break-word;
+}
+
+.project_details p {
+  padding: 7px 0 15px;
+  line-height: 1.7;
+}
+
+.soft_skills {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.soft_skills_list {
+  padding: 12px 10px;
+  border-radius: var(--border-md-rounded);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: 0.87rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.soft_skills_list:hover {
+  background-color: #5272ffb6;
+  color: #fff;
+}
+
+/* ========== Responsive Design ========== */
+@media (max-width: 991px) {
+  .profile_services .row {
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .profile_services .row .col {
+    width: 100%;
+  }
+
+  .profile_services:nth-child(3) .row .service_desc .inner_row .inner_col:nth-child(3) {
+    display: none;
+  }
+}

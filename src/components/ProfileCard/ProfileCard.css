@@ -1,0 +1,102 @@
+.profile_card {
+    background: #fff;
+    border-radius: var(--border-md-rounded);
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    padding: 0.7rem;
+    cursor: pointer;
+}
+
+.profile_card_top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    padding-left: 0.5rem;
+}
+
+.profile_card_top img {
+    width: 106px;
+    height: 106px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.user_info {
+    margin-top: 0.5rem;
+}
+
+.username {
+    font-weight: 500;
+    font-size: 1.03rem;
+    padding-bottom: 7px;
+}
+
+.username span {
+    color: #e2626b;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+}
+
+.user_info .title {
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding-bottom: 7px;
+}
+
+.skills {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 5px;
+    row-gap: 12px;
+}
+
+.profile_card .skills .skill_tag {
+    font-size: 0.6rem;
+    font-weight: 600;
+}
+.profile_card .skills .skill_tag:hover {
+    background-color: transparent;
+}
+
+.profile_summary {
+    padding: 15px 0;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.industries {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
+
+.industries p {
+    text-decoration: underline;
+    padding-right: 5px;
+}
+
+.profile_links {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.profile_links a {
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
