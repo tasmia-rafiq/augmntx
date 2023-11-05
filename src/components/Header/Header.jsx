@@ -4,6 +4,7 @@ import { FiMenu } from "react-icons/fi";
 import { BiChevronDown } from "react-icons/bi";
 import { MdOutlineClose } from "react-icons/md";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -27,9 +28,9 @@ const Header = () => {
     <header className={isHeaderFixed ? "fixed": ""}>
       <nav className={`navbar container ${isMobile ? "responsive" : ""}`}>
         <div className="logo">
-          <a href="/">
+          <Link to="/">
             <img src={logo} alt="Augmntx" />
-          </a>
+          </Link>
         </div>
 
         <ul className={`nav-menu ${isMobileMenuOpen ? "show" : ""}`}>
@@ -66,7 +67,7 @@ const Header = () => {
             </a>
           </li>
           <li>
-            <a href="#">Login</a>
+            <Link to="admin/auth/login">Login</Link>
           </li>
 
           {/* MENU FOOTER */}

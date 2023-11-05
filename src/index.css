@@ -271,6 +271,89 @@ section {
   padding: 12px 20px;
 }
 
+/* ========== LOGIN PAGE ========== */
+.login_page {
+  background-color: #f3fafe;
+}
+
+.form_wrapper {
+  background-color: #fff;
+  width: 36%;
+  padding: 50px 60px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  margin: 0 auto;
+  border-radius: 0.4rem;
+}
+
+.form_wrapper h3 {
+  color: #343f52;
+  margin-bottom: 0.5rem;
+  font-size: 22px;
+}
+
+.login_form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.login_form input {
+  display: block;
+  width: 100%;
+  padding: 0.8rem 1.2rem;
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #60697b;
+  background-color: #fefefe;
+  background-clip: padding-box;
+  border: 1px solid rgba(8, 60, 130, 0.07);
+  outline: none;
+  border-radius: 0.4rem;
+  box-shadow: 0rem 0rem 1.25rem rgba(30, 34, 40, 0.04);
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.login_form input::placeholder {
+  color: #9ba1ac;
+}
+
+.login_form input:focus {
+  border-color: #afdcf8;
+}
+
+.login_form .btn {
+  margin-top: 1.2rem;
+  border-radius: var(--border-md-rounded);
+}
+
+.forgot_pass {
+  text-align: center;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.create_account {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.2rem;
+  text-align: center;
+}
+
+.create_account p {
+  color: #60697b;
+  font-weight: 500;
+  padding-bottom: 0.5rem;
+}
+
+.create_account a {
+  color: var(--primary-color);
+}
+
 
 /* ========== RESPONSIVE DESIGN ========== */
 @media (max-width: 991px) {
@@ -314,6 +397,12 @@ section {
     border-right: unset;
     border-bottom: 2px solid #fff;
     padding-bottom: 30px;
+  }
+
+  /* --- Login Page --- */
+  .form_wrapper {
+    width: 90%;
+    padding: 25px 30px;
   }
 }
 
